@@ -36,7 +36,9 @@ const Home = () => {
                 <p className={styles.parrafo}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque placeat eligendi porro consectetur animi voluptatibus excepturi pariatur, ullam, a perspiciatis fugiat, voluptatum dolores voluptatem incidunt! Asperiores fuga ducimus dolorem!</p>
 
                 <div className={styles.parent}>
-                    <div><p>5 directions of obstacle sensing</p></div>
+                    <div>
+                        <p>5 directions of obstacle sensing</p>
+                    </div>
                     <div><p>Hyperlapse</p></div>
                     <div><p>4K/60FPS</p></div>
                     <div><p>60 mins flight time</p></div>
