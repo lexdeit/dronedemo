@@ -1,91 +1,63 @@
-.background {
+.iframer {
+    position: fixed;
     width: 100vw;
     height: 100vh;
-    z-index: -5;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgb(0, 0, 0), rgb(0, 0, 0));
+    z-index: -10;
+    transform: scale(1.5);
 }
 
-.container {
+.section {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* backdrop-filter: blur(10px); */
-    gap: 0em;
-}
-
-.drone {
-    width: 40em;
-}
-
-
-.container>h1 {
-    font-size: 5em;
     text-align: center;
-}
-
-.container>p {
-    text-align: center;
-    font-size: 1.5em;
-    padding: 0em 25em 0em 25em;
-    margin: 0%;
-}
-
-.background>video {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    transform: scale(1.5);
+    background: linear-gradient(#00000034, #000000);
     z-index: -10;
 }
+
+.imagen {
+    top: 0;
+    position: absolute;
+    height: 40em;
+    z-index: -1;
+}
+
+.section>h1 {
+    font-size: 4em;
+}
+
+.parrafo {
+    font-size: 1.1em;
+    padding-left: 25em;
+    padding-right: 25em;
+}
+
 
 .parent {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 2em;
-    padding: 0em 25em 0em 25em;
-    position: baseline;
-    text-align: center;
+    grid-column-gap: 1em;
 }
 
 .parent>div {
+    background-color: #3c3c3c;
     border-radius: 25px;
-    height: 10em;
     width: 10em;
-    background-color: rgb(24, 24, 24);
+    height: 10em;
 }
 
-.div1 {
-    grid-area: 1 / 1 / 2 / 2;
-}
+@media (max-width: 1200px) {
+    .parrafo {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
 
-.div2 {
-    grid-area: 1 / 2 / 2 / 3;
-}
-
-.div3 {
-    grid-area: 1 / 3 / 2 / 4;
-}
-
-.div4 {
-    grid-area: 1 / 4 / 2 / 5;
-}
-
-.div5 {
-    grid-area: 1 / 5 / 2 / 6;
-}
-
-.div6 {
-    grid-area: 1 / 6 / 2 / 7;
-}
-
-/*----------------------------------------------ICONOS--------------------------------------------*/
-
-.item1 {
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='-3.2 -3.2 38.40 38.40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3Crect x='-3.2' y='-3.2' width='38.40' height='38.40' rx='8.448' fill='%23ffffff' strokewidth='0'%3E%3C/rect%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M2.58536 17.4132C1.80488 16.6327 1.80488 15.3673 2.58536 14.5868L14.5868 2.58536C15.3673 1.80488 16.6327 1.80488 17.4132 2.58536L29.4146 14.5868C30.1951 15.3673 30.1951 16.6327 29.4146 17.4132L17.4132 29.4146C16.6327 30.1951 15.3673 30.1951 14.5868 29.4146L2.58536 17.4132Z' fill='%23EE513B'%3E%3C/path%3E%3Cpath d='M12.1489 5.06152L10.9336 6.27686L14.0725 9.41577C13.9455 9.68819 13.8746 9.99201 13.8746 10.3124C13.8746 11.222 14.4461 11.9981 15.2496 12.3012V19.9798C14.4461 20.2829 13.8746 21.059 13.8746 21.9686C13.8746 23.1422 14.826 24.0936 15.9996 24.0936C17.1732 24.0936 18.1246 23.1422 18.1246 21.9686C18.1246 21.144 17.6549 20.429 16.9684 20.0768V12.3117L19.9689 15.3122C19.8481 15.5791 19.7809 15.8754 19.7809 16.1874C19.7809 17.361 20.7323 18.3124 21.9059 18.3124C23.0795 18.3124 24.0309 17.361 24.0309 16.1874C24.0309 15.0138 23.0795 14.0624 21.9059 14.0624C21.6778 14.0624 21.4582 14.0983 21.2522 14.1648L18.0297 10.9423C18.0914 10.7433 18.1246 10.5317 18.1246 10.3124C18.1246 9.13878 17.1732 8.18738 15.9996 8.18738C15.7803 8.18738 15.5688 8.22061 15.3697 8.2823L12.1489 5.06152Z' fill='white'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
-    width: 5.5em;
-    height: 4.5em;
-    width: 4.5em;
-    background-repeat: no-repeat;
+    .parent>div {
+        display: none;
+    }
 }

@@ -23,73 +23,30 @@ const iconTechVariants = {
 const Home = () => {
     return (
         <>
-            <section id="home" className={styles.background}>
-                <video autoPlay loop controls>
-                    <source src='./dronevideo.webm' type='video/webm' />
-                </video>
+            <video autoPlay loop controls className={styles.iframer}>
+                <source src='./dronevideo.webm' type='video/webm' />
+            </video>
+            {/* <iframe src="https://www.youtube.com/embed/tU8BuomMd-4?&autoplay=1&loop=1&mute=1&showinfo=0&controls=0" className={styles.iframer} /> */}
 
-                {/* <iframe src="https://www.youtube.com/embed/tU8BuomMd-4?&autoplay=1&loop=1&mute=1&showinfo=0&controls=0" /> */}
+            <section className={styles.section}>
 
+                <img src="./principal.png" alt="Drone" className={styles.imagen} />
 
-                <div className={styles.container}>
+                <h1>Let's fly higher</h1>
+                <p className={styles.parrafo}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque placeat eligendi porro consectetur animi voluptatibus excepturi pariatur, ullam, a perspiciatis fugiat, voluptatum dolores voluptatem incidunt! Asperiores fuga ducimus dolorem!</p>
 
-                    <img src="./principal.png" alt="" className={styles.drone} />
-
-                    <h1>Let's fly higher</h1>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quidem quasi. Quos eos perspiciatis non molestiae qui eius praesentium provident sunt accusantium excepturi? Autem quas architecto natus, cupiditate aliquam recusandae.</p>
-
-                    <h2>From $3,000</h2>
-
+                <div className={styles.parent}>
+                    <div><p>5 directions of obstacle sensing</p></div>
+                    <div><p>Hyperlapse</p></div>
+                    <div><p>4K/60FPS</p></div>
+                    <div><p>60 mins flight time</p></div>
+                    <div><p>Active Track 3.0</p></div>
+                    <div><p>Return Home</p></div>
                 </div>
 
-                <motion.div
-                    variants={containerAnimation}
-                    initial="hidden"
-                    whileInView="visible"
-                    className={styles.parent}>
-
-                    <motion.div
-                        variants={iconTechVariants}
-                        className={styles.div1}>
-                        <span className={styles.item1} />
-                        <p>5 Directions of obstacle sensing</p>
-                    </motion.div>
-
-                    <motion.div
-                        variants={iconTechVariants}
-                        className={styles.div2}>
-                        <p>Hyperlapse</p>
-                    </motion.div>
-
-                    <motion.div
-                        variants={iconTechVariants}
-                        className={styles.div3}>
-                        <p>4K/60fps</p>
-                    </motion.div>
-
-                    <motion.div
-                        variants={iconTechVariants}
-                        className={styles.div4}>
-                        <p>60 minutes time flight</p>
-                    </motion.div>
-
-                    <motion.div
-                        variants={iconTechVariants}
-                        className={styles.div5}>
-                        <p>Active Track 3.0</p>
-                    </motion.div>
-
-                    <motion.div
-                        variants={iconTechVariants}
-                        className={styles.div6}>
-                        <p>Return to home</p>
-                    </motion.div>
-
-
-                </motion.div>
-
             </section>
+
+
         </>
     )
 }

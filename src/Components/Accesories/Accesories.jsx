@@ -25,7 +25,7 @@ const Accesories = () => {
                 <div className={styles.div2}>
 
                     <div >
-                        <h1>DroneX Lock Protector</h1>
+                        <h2 className={styles.subtitulo}>DroneX Lock Protector</h2>
                         <h3>From $129</h3>
                     </div>
 
@@ -37,7 +37,7 @@ const Accesories = () => {
                 <div className={styles.div3}>
                     <div>
 
-                        <h1>Spare Propellers</h1>
+                        <h2 className={styles.subtitulo} >Spare Propellers</h2>
                         <h3>From $129</h3>
                     </div>
                     <div className={styles.item2}>
@@ -49,7 +49,7 @@ const Accesories = () => {
 
                 <div className={styles.div4}>
                     <div>
-                        <h1>Intelligent Battery</h1>
+                        <h2 className={styles.subtitulo}>Intelligent Battery</h2>
                         <h3>From $229</h3>
                     </div>
 
@@ -61,7 +61,7 @@ const Accesories = () => {
 
                 <div className={styles.div5}>
                     <div>
-                        <h1>High Speed</h1>
+                        <h2 className={styles.subtitulo}>High Speed</h2>
                         <h3>From $60</h3>
                     </div>
 

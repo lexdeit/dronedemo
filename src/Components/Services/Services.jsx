@@ -10,7 +10,7 @@ const Services = () => {
                     <div className={styles.div1}>
 
                         <div>
-                            <h1>Stay Flying Longer-Up to 60mns</h1>
+                            <h1 className={styles.titulo}>Stay Flying Longer-Up to 60mns</h1>
                             <p>
                                 Los drones son vehículos aéreos no tripulados que han revolucionado diversos campos, desde la fotografía y la videografía, hasta la agricultura y la inspección de infraestructuras. Existen drones con diferentes capacidades de vuelo, y algunos modelos pueden permanecer en el aire durante hasta 60 minutos sin necesidad de aterrizar.
                             </p>
@@ -19,13 +19,13 @@ const Services = () => {
 
 
                         <div>
-                            <img src="./DJI-Mavic-Pro-Drone-PNG-File.png" alt="" />
+                            <img src="./DJI-Mavic-Pro-Drone-PNG-File.png" alt="" className={styles.imagen} />
                         </div>
                     </div>
 
                     <div className={styles.div2}>
 
-                        <h1>Intuitive Remote Controller</h1>
+                        <h1 className={styles.titulo}>Intuitive Remote Controller</h1>
 
                         <p>¡Descubre el control remoto intuitivo para drones! Nuestro controlador ha sido diseñado pensando en la comodidad y facilidad de uso.</p>
 
@@ -39,8 +39,8 @@ const Services = () => {
 
 
                     <div className={styles.div4}>
-                        <img src="./Drone-PNG.png" alt="" />
-                        <h1>Velocidad de Nuestro Drone</h1>
+                        <img src="./Drone-PNG.png" alt="" className={styles.imagen} />
+                        <h1 className={styles.titulo}>Velocidad de Nuestro Drone</h1>
                         <p>Nuestro drone es conocido por su increíble velocidad, lo que lo convierte en una verdadera maravilla tecnológica en el mundo de los drones. </p>
 
                     </div>
