@@ -28,12 +28,28 @@ const Home = () => {
             </video>
             {/* <iframe src="https://www.youtube.com/embed/tU8BuomMd-4?&autoplay=1&loop=1&mute=1&showinfo=0&controls=0" className={styles.iframer} /> */}
 
-            <section className={styles.section}>
+            <section className={styles.section} id='home'>
 
-                <img src="./dronefullhd.png" alt="Drone" className={styles.imagen} />
+                <motion.img
+                    initial={{ scale: 0, y: -200 }}
+                    animate={{ scale: 1.5, y: 0 }}
+                    transition={{ delay: 1, duration: 1 }}
+                    src="./dronefullhd.png" alt="Drone" className={styles.imagen} />
 
-                <h1>Let's fly higher</h1>
-                <p className={styles.parrafo}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque placeat eligendi porro consectetur animi voluptatibus excepturi pariatur, ullam, a perspiciatis fugiat, voluptatum dolores voluptatem incidunt! Asperiores fuga ducimus dolorem!</p>
+
+                <motion.h1
+                    initial={{ y: 200 }}
+                    animate={{ y: 0 }}
+                    transition={{ duration: 0.5 }}
+                >DroneTech</motion.h1>
+
+                <motion.h2
+                    initial={{ y: 200 }}
+                    animate={{ y: 0 }}
+                    transition={{ duration: 1 }}
+                >¡Tu visión en las alas de la innovación!</motion.h2>
+                <p className={styles.parrafo}>Somos líderes en drones, con soluciones innovadoras para agricultura, construcción, inspección industrial y más. Confía en nuestra tecnología de vanguardia y servicio al cliente excepcional para llevar tu negocio a nuevas alturas.</p>
+
 
                 <motion.div
                     variants={containerAnimation}
@@ -43,45 +59,49 @@ const Home = () => {
 
                     <motion.div
                         variants={iconTechVariants}
-                    >
-                        <img src="./camera-drone.png" alt="" style={{ height: '3.5em', width: '3.5em' }} />
-                        {/* <p>5 directions of obstacle sensing</p> */}
-                    </motion.div>
-
-
-                    <motion.div
-                        variants={iconTechVariants}
-                    >
-                        <img src="./video.png" alt="" style={{ height: '3.5em', width: '3.5em' }} />
-                        {/* <p>Hyperlapse</p> */}
+                        className={styles.gradientborder}>
+                        <span className={styles.icono1} />
+                        <p>5 Directions</p>
                     </motion.div>
 
                     <motion.div
                         variants={iconTechVariants}
-                    >
-                        <img src="./4k-fullhd.png" alt="" style={{ height: '3.5em', width: '3.5em' }} />
-                        {/* <p>4K/60FPS</p> */}
+                        className={styles.gradientborder}>
+                        <span className={styles.icono2} />
+                        <p>Hyperlapse</p>
                     </motion.div>
 
                     <motion.div
                         variants={iconTechVariants}
+                        className={styles.gradientborder}
                     >
-                        <img src="./full-battery.png" alt="" style={{ height: '3.5em', width: '3.5em' }} />
-                        {/* <p>60 mins flight time</p> */}
+
+                        <span className={styles.icono3} />
+                        <p>1080p/60fps</p>
                     </motion.div>
 
                     <motion.div
                         variants={iconTechVariants}
+                        className={styles.gradientborder}
                     >
-                        <img src="./track.png" alt="" style={{ height: '3.5em', width: '3.5em' }} />
-                        {/* <p>Active Track 3.0</p> */}
+                        <span className={styles.icono4} />
+                        <p>60 mins battery</p>
                     </motion.div>
 
                     <motion.div
                         variants={iconTechVariants}
+                        className={styles.gradientborder}
                     >
-                        <img src="./go-back.png" alt="" style={{ height: '3.5em', width: '3.5em' }} />
-                        {/* <p>Return Home</p> */}
+                        <span className={styles.icono5} />
+                        <p>Track 3.0</p>
+                    </motion.div>
+
+                    <motion.div
+                        variants={iconTechVariants}
+                        className={styles.gradientborder}
+                    >
+                        <span className={styles.icono6} />
+                        <p>Return Home</p>
                     </motion.div>
 
 

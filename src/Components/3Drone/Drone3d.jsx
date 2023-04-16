@@ -11,7 +11,8 @@ const Drone3d = () => {
 
 
                     <div className={styles.div1}>
-                        <h1>Descubre qué se siente al tener un Drone</h1>
+                        <h5 className={styles.titulo}>Descubre</h5>
+                        <h1 style={{ margin: 0 }}>Qué se siente tener un Drone</h1>
                         <p>Haz clic en la imagen y arrastra para verla.</p>
                     </div>
 
