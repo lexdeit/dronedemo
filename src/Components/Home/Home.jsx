@@ -30,13 +30,15 @@ const Home = () => {
 
             <section className={styles.section}>
 
-                <img src="./principal.png" alt="Drone" className={styles.imagen} />
+                <img src="./dronefullhd.png" alt="Drone" className={styles.imagen} />
 
                 <h1>Let's fly higher</h1>
                 <p className={styles.parrafo}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque placeat eligendi porro consectetur animi voluptatibus excepturi pariatur, ullam, a perspiciatis fugiat, voluptatum dolores voluptatem incidunt! Asperiores fuga ducimus dolorem!</p>
 
                 <motion.div
                     variants={containerAnimation}
+                    initial="hidden"
+                    whileInView="visible"
                     className={styles.parent}>
 
                     <motion.div

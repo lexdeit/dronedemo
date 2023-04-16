@@ -4,9 +4,9 @@ import { useViewportScroll, useTransform, motion } from 'framer-motion';
 
 
 const Services = () => {
-    // const { scrollYProgress } = useViewportScroll();
-    // const scale = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
-    // const opacity = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
+    const { scrollYProgress } = useViewportScroll();
+    const scale = useTransform(scrollYProgress, [0, 0.3], [0, 1]);
+    const opacity = useTransform(scrollYProgress, [0, 0.3], [0, 1]);
 
     return (
         <>
@@ -14,7 +14,7 @@ const Services = () => {
 
 
                 <motion.div
-                    // style={{ scale, opacity }}
+                    style={{ scale, opacity }}
                     className={styles.parent}>
 
                     <div className={styles.div1}>

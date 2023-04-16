@@ -2,9 +2,9 @@ import styles from './Accesories.module.css';
 import { useViewportScroll, useTransform, motion } from 'framer-motion';
 
 const Accesories = () => {
-    // const { scrollYProgress } = useViewportScroll();
-    // const scale = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
-    // const opacity = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
+    const { scrollYProgress } = useViewportScroll();
+    const scale = useTransform(scrollYProgress, [0, 0.7], [0, 1]);
+    const opacity = useTransform(scrollYProgress, [0, 0.7], [0, 1]);
 
 
     return (
@@ -14,12 +14,11 @@ const Accesories = () => {
         >
             <h1>Accesories</h1>
             <motion.div
+                style={{ scale, opacity }}
                 className={styles.parent}>
 
 
                 <motion.div
-                    // style={{ scale, opacity }}
-
                     className={styles.div1}>
 
                     <div>
@@ -36,7 +35,6 @@ const Accesories = () => {
 
 
                 <motion.div
-                    // style={{ scale, opacity }}
                     className={styles.div2}>
 
                     <div >
@@ -50,7 +48,6 @@ const Accesories = () => {
                 </motion.div>
 
                 <motion.div
-                    // style={{ scale, opacity }}
                     className={styles.div3}>
                     <div>
 
@@ -65,7 +62,6 @@ const Accesories = () => {
 
 
                 <motion.div
-                    // style={{ scale, opacity }}
                     className={styles.div4}>
                     <div>
                         <h2 className={styles.subtitulo}>Intelligent Battery</h2>
@@ -79,7 +75,6 @@ const Accesories = () => {
                 </motion.div>
 
                 <motion.div
-                    // style={{ scale, opacity }}
                     className={styles.div5}>
                     <div>
                         <h2 className={styles.subtitulo}>High Speed</h2>
