@@ -6,6 +6,7 @@ import Drone3d from "./Components/3Drone/Drone3d";
 import Post from "./Components/Post/Post";
 import Footer from "./Components/Footer/Footer";
 import Menu from "./Components/Menu/Menu";
+import Letters from "./Components/Lettersvideo/Letters";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Gallery />
       <Drone3d />
       <Post />
+      <Letters/>
       <Footer />
     </>
   )

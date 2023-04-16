@@ -1,0 +1,25 @@
+.principal{
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+}
+
+.video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.titulo {
+    font-size: 20em;
+    text-align: center;
+    margin: 0%;
+    background-color: black;
+    height: 100%;
+    mix-blend-mode: multiply;
+    font-weight: bold;
+}

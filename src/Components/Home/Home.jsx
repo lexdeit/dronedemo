@@ -29,7 +29,6 @@ const Home = () => {
             {/* <iframe src="https://www.youtube.com/embed/tU8BuomMd-4?&autoplay=1&loop=1&mute=1&showinfo=0&controls=0" className={styles.iframer} /> */}
 
             <section className={styles.section} id='home'>
-
                 <motion.img
                     initial={{ scale: 0, y: -200 }}
                     animate={{ scale: 1.5, y: 0 }}
