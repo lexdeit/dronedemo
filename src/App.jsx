@@ -2,6 +2,7 @@ import Home from "./Components/Home/Home";
 import Services from "./Components/Services/Services";
 import Accesories from "./Components/Accesories/Accesories";
 import Gallery from "./Components/Gallery/Gallery";
+import Drone3d from "./Components/3Drone/Drone3d";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Services />
       <Accesories />
       <Gallery />
+      <Drone3d />
     </>
   )
 }
