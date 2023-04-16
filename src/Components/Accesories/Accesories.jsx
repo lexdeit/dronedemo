@@ -3,8 +3,8 @@ import { useViewportScroll, useTransform, motion } from 'framer-motion';
 
 const Accesories = () => {
     const { scrollYProgress } = useViewportScroll();
-    const scale = useTransform(scrollYProgress, [0, 0.7], [0, 1]);
-    const opacity = useTransform(scrollYProgress, [0, 0.7], [0, 1]);
+    const scale = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
+    const opacity = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
 
 
     return (

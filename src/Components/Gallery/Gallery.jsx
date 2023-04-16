@@ -24,7 +24,7 @@ const Gallery = () => {
     return (
         <>
             <section className={styles.section}>
-
+                <hr />
                 <h2>Desde el diseño exterior hasta la estructura interna, cada detalle ha sido cuidadosamente analizado y optimizado.</h2>
 
                 <motion.div
