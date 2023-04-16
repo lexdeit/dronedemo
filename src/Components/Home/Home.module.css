@@ -1,27 +1,27 @@
 .iframer {
     position: fixed;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: -10;
     transform: scale(1.5);
 }
 
 .section {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(#00000034, #000000);
+    background: linear-gradient(#000000a3, #000000);
     z-index: -10;
 }
 
 .imagen {
     top: 0;
-    position: absolute;
+    /* position: absolute; */
     height: 40em;
     z-index: -1;
 }
@@ -45,10 +45,11 @@
 }
 
 .parent>div {
-    background-color: #3c3c3c;
+    background-color: #ffffff;
     border-radius: 25px;
-    width: 10em;
-    height: 10em;
+    width: 5em;
+    height: 5em;
+    color: #000000;
 }
 
 @media (max-width: 1200px) {

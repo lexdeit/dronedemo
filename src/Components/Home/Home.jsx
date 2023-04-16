@@ -35,16 +35,55 @@ const Home = () => {
                 <h1>Let's fly higher</h1>
                 <p className={styles.parrafo}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque placeat eligendi porro consectetur animi voluptatibus excepturi pariatur, ullam, a perspiciatis fugiat, voluptatum dolores voluptatem incidunt! Asperiores fuga ducimus dolorem!</p>
 
-                <div className={styles.parent}>
-                    <div>
-                        <p>5 directions of obstacle sensing</p>
-                    </div>
-                    <div><p>Hyperlapse</p></div>
-                    <div><p>4K/60FPS</p></div>
-                    <div><p>60 mins flight time</p></div>
-                    <div><p>Active Track 3.0</p></div>
-                    <div><p>Return Home</p></div>
-                </div>
+                <motion.div
+                    variants={containerAnimation}
+                    className={styles.parent}>
+
+                    <motion.div
+                        variants={iconTechVariants}
+                    >
+                        <img src="./camera-drone.png" alt="" style={{ height: '3.5em', width: '3.5em' }} />
+                        {/* <p>5 directions of obstacle sensing</p> */}
+                    </motion.div>
+
+
+                    <motion.div
+                        variants={iconTechVariants}
+                    >
+                        <img src="./video.png" alt="" style={{ height: '3.5em', width: '3.5em' }} />
+                        {/* <p>Hyperlapse</p> */}
+                    </motion.div>
+
+                    <motion.div
+                        variants={iconTechVariants}
+                    >
+                        <img src="./4k-fullhd.png" alt="" style={{ height: '3.5em', width: '3.5em' }} />
+                        {/* <p>4K/60FPS</p> */}
+                    </motion.div>
+
+                    <motion.div
+                        variants={iconTechVariants}
+                    >
+                        <img src="./full-battery.png" alt="" style={{ height: '3.5em', width: '3.5em' }} />
+                        {/* <p>60 mins flight time</p> */}
+                    </motion.div>
+
+                    <motion.div
+                        variants={iconTechVariants}
+                    >
+                        <img src="./track.png" alt="" style={{ height: '3.5em', width: '3.5em' }} />
+                        {/* <p>Active Track 3.0</p> */}
+                    </motion.div>
+
+                    <motion.div
+                        variants={iconTechVariants}
+                    >
+                        <img src="./go-back.png" alt="" style={{ height: '3.5em', width: '3.5em' }} />
+                        {/* <p>Return Home</p> */}
+                    </motion.div>
+
+
+                </motion.div>
 
             </section>
 
