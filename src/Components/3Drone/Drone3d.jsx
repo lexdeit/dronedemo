@@ -15,9 +15,9 @@ const Drone3d = ({ isScreenBig }) => {
 
 
                     <div className={styles.div1}>
-                        <h5 className={styles.titulo}>Descubre</h5>
                         {isScreenBig && (
                             <>
+                                <h5 className={styles.titulo}>Descubre</h5>
                                 {showAnimation && <p>Haz clic en la imagen y arrastra para verla.</p>}
                                 <Button info={"Discover"} onClick={() => setshowAnimation(!showAnimation)} />
                             </>
@@ -26,8 +26,13 @@ const Drone3d = ({ isScreenBig }) => {
                     </div>
 
                     <div className={styles.div2}>
-                        <h1>Escena 3D</h1>
-                        <p>Haz clic en el boton para verla.</p>
+
+                        {!showAnimation && (
+                            <>
+                                <h1>Escena 3D</h1>
+                                <p>Haz clic en el boton para verla.</p>
+                            </>
+                        )}
                         <Suspense fallback={<div>Cargando...</div>}>
                             {showAnimation && <Spline scene="https://prod.spline.design/P15TFiL3nUHTyBDo/scene.splinecode" />}
                         </Suspense>
