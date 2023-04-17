@@ -1,10 +1,13 @@
 import styles from './Drone3d.module.css';
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useState } from 'react';
 const Spline = lazy(() => import('@splinetool/react-spline'));
+import Button from '../Buttons/Button';
 
 
 
 const Drone3d = ({ isScreenBig }) => {
+    const [showAnimation, setshowAnimation] = useState(false);
+
     return (
         <>
             <section id='3d' >
@@ -13,13 +16,20 @@ const Drone3d = ({ isScreenBig }) => {
 
                     <div className={styles.div1}>
                         <h5 className={styles.titulo}>Descubre</h5>
-                        {isScreenBig && <h1 style={{ margin: 0 }}>Qué se siente tener un Drone</h1> &&
-                            <p>Haz clic en la imagen y arrastra para verla.</p>}
+                        {isScreenBig && (
+                            <>
+                                {showAnimation && <p>Haz clic en la imagen y arrastra para verla.</p>}
+                                <Button info={"Discover"} onClick={() => setshowAnimation(!showAnimation)} />
+                            </>
+                        )}
+
                     </div>
 
                     <div className={styles.div2}>
+                        <h1>Escena 3D</h1>
+                        <p>Haz clic en el boton para verla.</p>
                         <Suspense fallback={<div>Cargando...</div>}>
-                            {isScreenBig && <Spline scene="https://prod.spline.design/P15TFiL3nUHTyBDo/scene.splinecode" />}
+                            {showAnimation && <Spline scene="https://prod.spline.design/P15TFiL3nUHTyBDo/scene.splinecode" />}
                         </Suspense>
                     </div>
 

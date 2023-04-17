@@ -20,6 +20,21 @@ const iconTechVariants = {
     },
 }
 
+//Animacion de titulo
+const tittleAnimation = {
+    hidden: { opacity: 1, }, visible: {
+        opacity: 1, transition: {
+            delayChildren: 0,
+            staggerChildren: 0.1
+        }
+    }
+}
+//Animacion de letra
+const wordAnimation = {
+    hidden: { y: 200, opacity: 0 },
+    visible: { y: 0, opacity: 1 },
+}
+
 const Home = () => {
     return (
         <>
@@ -37,16 +52,24 @@ const Home = () => {
 
 
                 <motion.h1
-                    initial={{ y: 200 }}
-                    animate={{ y: 0 }}
-                    transition={{ duration: 0.5 }}
-                >DroneTech</motion.h1>
+                    variants={tittleAnimation}
+                    initial='hidden'
+                    whileInView='visible'
+                >{Array.from("Drone Tech").map((word, i) => (
+                    <motion.span
+                        variants={wordAnimation}
+                        key={i}>{word}</motion.span>
+                ))}</motion.h1>
 
                 <motion.h2
-                    initial={{ y: 200 }}
-                    animate={{ y: 0 }}
-                    transition={{ duration: 1 }}
-                >¡Tu visión en las alas de la innovación!</motion.h2>
+                    variants={tittleAnimation}
+                    initial='hidden'
+                    whileInView='visible'
+                >{Array.from("¡Tu visión en las alas de la innovación!").map((word, i) => (
+                    <motion.span
+                        variants={wordAnimation}
+                        key={i}>{word}</motion.span>
+                ))}</motion.h2>
                 <p className={styles.parrafo}>Somos líderes en drones, con soluciones innovadoras para agricultura, construcción, inspección industrial y más. Confía en nuestra tecnología de vanguardia y servicio al cliente excepcional para llevar tu negocio a nuevas alturas.</p>
 
 
