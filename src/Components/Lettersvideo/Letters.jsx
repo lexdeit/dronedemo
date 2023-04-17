@@ -1,19 +1,7 @@
 import styles from './Letters.module.css';
 import { useEffect, useState } from 'react';
 
-const Letters = ({ texto, size }) => {
-    const [isScreenBig, setIsScreenBig] = useState(false);
-
-
-    const handleResize = () => {
-        setIsScreenBig(window.innerWidth >= 1200);
-    };
-
-    useEffect(() => {
-        handleResize();
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
+const Letters = ({ texto, size, isScreenBig }) => {
 
     return (
         <>
