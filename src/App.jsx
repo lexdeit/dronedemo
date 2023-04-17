@@ -14,11 +14,13 @@ const App = () => {
       <Menu />
       <Home />
       <Services />
+      <Letters texto={"Accesories"} size={"10em"} />
       <Accesories />
+      <Letters texto={"Cinematic"} size={"15em"} />
       <Gallery />
       <Drone3d />
       <Post />
-      <Letters/>
+      <Letters texto={"DroneX"} size={"20em"} />
       <Footer />
     </>
   )

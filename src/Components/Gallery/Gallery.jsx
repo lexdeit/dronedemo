@@ -24,9 +24,6 @@ const Gallery = () => {
     return (
         <>
             <section className={styles.section} id='gallery'>
-                <hr />
-                <h2>Desde el diseño exterior hasta la estructura interna, cada detalle ha sido cuidadosamente analizado y optimizado.</h2>
-
                 <motion.div
                     variants={containerAnimation}
                     initial="hidden"
@@ -44,7 +41,7 @@ const Gallery = () => {
                     <motion.div
                         variants={iconTechVariants}
                         className={styles.div2}>
-                        <video autoPlay loop className={styles.video}>
+                        <video autoPlay loop muted className={styles.video}>
                             <source src='./video1.mp4' />
                         </video>
                     </motion.div>
@@ -53,13 +50,13 @@ const Gallery = () => {
                     <motion.div
                         variants={iconTechVariants}
                         className={styles.div3}>
-                        <video autoPlay loop className={styles.video}>
+                        <video autoPlay loop muted className={styles.video}>
                             <source src='./video2.mp4' />
                         </video>
                     </motion.div>
 
                 </motion.div>
-
+                <br />
                 {/* Galleria 2 */}
                 <motion.div
                     variants={containerAnimation}
@@ -70,21 +67,22 @@ const Gallery = () => {
                     <motion.div
                         variants={iconTechVariants}
                         className={styles.div4}>
-                        <img src="gallery1.png" alt="" className={styles.imagen} />
-
+                        <img src="gallery1.png" alt="" className={styles.imagen2} />
                     </motion.div>
 
                     <motion.div
                         variants={iconTechVariants}
                         className={styles.div5}>
-                        <img src="gallery2.png" alt="" className={styles.imagen} />
+                        <img src="gallery2.png" alt="" className={styles.imagen2} />
+
 
                     </motion.div>
 
                     <motion.div
                         variants={iconTechVariants}
                         className={styles.div6}>
-                        <img src="gallery3.png" alt="" className={styles.imagen} />
+                        <img src="gallery3.png" alt="" className={styles.imagen2} />
+
                     </motion.div>
 
                 </motion.div>

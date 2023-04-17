@@ -23,7 +23,7 @@ const iconTechVariants = {
 const Home = () => {
     return (
         <>
-            <video autoPlay loop controls className={styles.iframer}>
+            <video autoPlay loop muted className={styles.iframer}>
                 <source src='./dronevideo.webm' type='video/webm' />
             </video>
             {/* <iframe src="https://www.youtube.com/embed/tU8BuomMd-4?&autoplay=1&loop=1&mute=1&showinfo=0&controls=0" className={styles.iframer} /> */}

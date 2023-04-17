@@ -84,3 +84,36 @@
     right: 15%;
 }
 
+/*Responsive*/
+@media (max-width: 1200px) {
+
+    .parent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        gap: 1em;
+    }
+
+    .div1,
+    .div3{
+        display: none;
+    }
+
+    .div2 {
+        width: 80%;
+        height: 80vh;
+        margin: 0%;
+    }
+
+    .card {
+        top: 50%;
+        right: 5%;
+    }
+
+    .drone1,
+    .drone2{
+        display: none;
+    }
+}

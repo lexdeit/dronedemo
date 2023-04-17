@@ -8,7 +8,7 @@ const Post = () => {
 
 
             <div className={styles.parent}>
-                <video autoPlay loop controls className={styles.iframer}>
+                <video autoPlay loop className={styles.iframer}>
                     <source src='./droneflash.webm' type='video/webm' />
                 </video>
                 <div className={styles.div1}>

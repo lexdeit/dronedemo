@@ -3,8 +3,8 @@ import { useViewportScroll, useTransform, motion } from 'framer-motion';
 
 const Accesories = () => {
     const { scrollYProgress } = useViewportScroll();
-    const scale = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
-    const opacity = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
+    const scale = useTransform(scrollYProgress, [0, 0.45], [0, 1]);
+    const opacity = useTransform(scrollYProgress, [0, 0.45], [0, 1]);
 
 
     return (
@@ -12,7 +12,6 @@ const Accesories = () => {
             id='accesories'
             className={styles.section}
         >
-            <h1>Accesories</h1>
             <motion.div
                 style={{ scale, opacity }}
                 className={styles.parent}>

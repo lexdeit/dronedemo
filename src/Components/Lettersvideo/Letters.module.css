@@ -1,7 +1,7 @@
 .principal{
     position: relative;
     width: 100vw;
-    height: 50vh;
+    height: 100%;
 }
 
 .video {
@@ -15,11 +15,23 @@
 }
 
 .titulo {
-    font-size: 20em;
     text-align: center;
     margin: 0%;
     background-color: black;
     height: 100%;
     mix-blend-mode: multiply;
     font-weight: bold;
+}
+
+/*Responsive*/
+
+@media (max-width: 1200px) {
+
+    .principal{
+        height: 100%;
+    }
+
+ .titulo{
+    font-size: 10em;
+ }
 }

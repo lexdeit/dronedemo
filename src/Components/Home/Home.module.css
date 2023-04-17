@@ -177,3 +177,30 @@
         background-position: 100% 50%;
     }
 }
+
+/*-----------------------------------------RESPONSIVE-----------------------------------------------*/
+
+@media (max-width: 1200px) {
+    .parrafo {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .parent {
+        display: flex;
+    }
+
+    .section {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .imagen {
+        width: 50%;
+        height: auto;
+    }
+
+    .parrafo {
+        font-size: 1.1em;
+    }
+}
