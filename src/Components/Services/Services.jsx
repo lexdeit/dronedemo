@@ -1,16 +1,25 @@
 import styles from './Services.module.css';
 import Button from '../Buttons/Button';
-import { useViewportScroll, useTransform, motion } from 'framer-motion';
+import { useScroll, useTransform, motion } from 'framer-motion';
+import { useRef } from 'react';
 
 
 const Services = () => {
-    const { scrollYProgress } = useViewportScroll();
-    const scale = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
-    const opacity = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
-
+    let ref = useRef(null)
+    const { scrollYProgress } = useScroll({
+        target: ref,
+        offset: ["start start", "end start"]
+    });
+    const scale = useTransform(scrollYProgress, [0, 1], [1, 0.7]);
+    const opacity = useTransform(scrollYProgress, [0, 1], [1, 0.7]);
+    
     return (
         <>
-            <section id="services" className={styles.services}>
+            <section
+                id="services"
+                className={styles.services}
+                ref={ref}
+            >
 
 
                 <motion.div
